@@ -11,7 +11,6 @@ The scripts in this repo are now modularized for GPU configuration:
 - Default GPU type is `h100` (configurable).
 - Baseline NanoGPT can run with flexible GPU counts through DDP.
 - Modded run is supported for `NUM_GPUS` in `{1, 2, 4, 8}` in this vendored snapshot.
-- For first-time MIT Engaging onboarding, see `engaging/README.md`.
 
 > **Command convention:** after you `cd Engaging-NanoGPT`, run all commands in this README from the repository root unless a section explicitly tells you to `cd` elsewhere.
 
@@ -60,7 +59,6 @@ The canonical leaderboard for this project is maintained in the modded-nanogpt R
 - `nanogpt/`: vendored baseline NanoGPT training/data scripts.
 - `modded_nanogpt/`: vendored modded-nanogpt training code.
 - `slurm/`: job scripts for baseline and modded workflows.
-- `engaging/`: MIT Engaging setup helpers (SSH template, sync/bootstrap, submit wrappers).
 - `setup_env.sh`: one-time environment bootstrap.
 - `activate_env.sh`: fast env activation helper.
 
