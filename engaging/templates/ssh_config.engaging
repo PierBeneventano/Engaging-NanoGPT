@@ -1,0 +1,11 @@
+# MIT Engaging SSH host alias
+# Replace YOUR_KERBEROS_USERNAME before first use.
+
+Host engaging
+  HostName orcd-login.mit.edu
+  User pierb
+  ServerAliveInterval 30
+  ServerAliveCountMax 6
+  ControlMaster auto
+  ControlPath ~/.ssh/cm-%r@%h:%p
+  ControlPersist 10m
